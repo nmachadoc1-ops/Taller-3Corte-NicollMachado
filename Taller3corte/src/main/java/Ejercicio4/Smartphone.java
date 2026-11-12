@@ -37,7 +37,7 @@ public class Smartphone extends Dispositivo implements Fotografiable, Llamable{
 
     @Override
     public int getmegaPixeles() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return megaPixeles;
     }
 
     @Override
