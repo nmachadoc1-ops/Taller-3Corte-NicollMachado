@@ -8,6 +8,48 @@ package Ejercicio4;
  *
  * @author MI EQUIPO
  */
-public class Smartphone {
+public class Smartphone extends Dispositivo implements Fotografiable, Llamable{
+    private int megaPixeles;
+
+    public Smartphone(int megaPixeles, String marca, String modelo, double precio) {
+        super(marca, modelo, precio);
+        this.megaPixeles = megaPixeles;
+    }
+    
+    
+
+    @Override
+    public String funcion() {
+        return "Llamadas y fotografia";
+        
+        
+    }
+
+    @Override
+    public void describir() {
+        System.out.println("Smartphone "+ marca + " , " + modelo + " , " +  precio + " , " + funcion());
+    }
+
+    @Override
+    public void tomarFoto() {
+        System.out.println( marca + " tomo una foto de " + megaPixeles + "MP");
+    }
+
+    @Override
+    public int getmegaPixeles() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void llamar(String numero) {
+         System.out.println( marca + "llamando a" + numero);
+    }
+
+    @Override
+    public void colgar() {
+         System.out.println( marca + " finalizo llamada");
+    }
+
+    
     
 }
