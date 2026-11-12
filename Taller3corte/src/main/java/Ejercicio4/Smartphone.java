@@ -27,7 +27,7 @@ public class Smartphone extends Dispositivo implements Fotografiable, Llamable{
 
     @Override
     public void describir() {
-        System.out.println("Smartphone "+ marca + " , " + modelo + " , " +  precio + " , " + funcion());
+        System.out.println("Smartphone "+ marca + "-" + modelo + "-" +  precio + "-" + funcion());
     }
 
     @Override
@@ -42,12 +42,12 @@ public class Smartphone extends Dispositivo implements Fotografiable, Llamable{
 
     @Override
     public void llamar(String numero) {
-         System.out.println( marca + "llamando a" + numero);
+         System.out.println( marca + " llamando a " + numero);
     }
 
     @Override
     public void colgar() {
-         System.out.println( marca + " finalizo llamada");
+         System.out.println( marca + " finalizo llamada ");
     }
 
     

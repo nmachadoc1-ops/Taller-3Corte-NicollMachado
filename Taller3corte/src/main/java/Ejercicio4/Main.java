@@ -10,6 +10,11 @@ package Ejercicio4;
  */
 public class Main {
     public static void main(String[] args) {
+       Smartphone s = new Smartphone(50,"IPHONE","PRO 17", 7000000);
        
+       s.describir();
+       s.llamar("3012696230");
+       s.colgar();
+       s.tomarFoto();
     }
 }
