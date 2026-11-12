@@ -27,7 +27,7 @@ public class Smartphone extends Dispositivo implements Fotografiable, Llamable{
 
     @Override
     public void describir() {
-        System.out.println("Smartphone "+ marca + "-" + modelo + "-" +  precio + "-" + funcion());
+        System.out.println("Smartphone MARCA:"+ marca + " -MODELO:" + modelo + " -PRECIO:" +  precio + "-FUNCION:" + funcion());
     }
 
     @Override
