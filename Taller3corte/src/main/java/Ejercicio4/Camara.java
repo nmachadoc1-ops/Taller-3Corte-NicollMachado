@@ -13,7 +13,7 @@ public class Camara extends Dispositivo implements Fotografiable{
 
     public Camara(int MegaPixeles, String marca, String modelo, double precio) {
         super(marca, modelo, precio);
-        this.megaPixeles = megaPixeles;
+        this.megaPixeles = MegaPixeles;
     }
 
     @Override
@@ -28,13 +28,15 @@ public class Camara extends Dispositivo implements Fotografiable{
 
     @Override
     public void tomarFoto() {
-          System.out.println("Camara" + marca + " tomo una foto profesional de " + megaPixeles + "MP");
+          System.out.println("Camara" + marca + " tomo una foto profesional de " + this.megaPixeles + "MP");
     }
 
     @Override
     public int getmegaPixeles() {
         return megaPixeles;
     }
+
+  
     
 
     
