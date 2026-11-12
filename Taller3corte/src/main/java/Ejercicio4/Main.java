@@ -10,11 +10,10 @@ package Ejercicio4;
  */
 public class Main {
     public static void main(String[] args) {
-       Smartphone s = new Smartphone(50,"IPHONE","PRO 17", 7000000);
+       Dispositivo[] dispositivos = { new Smartphone(80, "Iphone", "Xs", 900000), 
+           new Smartphone(90, "Oppo", "A6 5G", 1149900),
+           new Camara(24, "Sony", "Alpha a6100", 3000000)
+       };
        
-       s.describir();
-       s.llamar("3012696230");
-       s.colgar();
-       s.tomarFoto();
-    }
+    }   
 }
