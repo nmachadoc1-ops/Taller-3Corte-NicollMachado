@@ -4,6 +4,8 @@
  */
 package Ejercicio10;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -11,6 +13,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -37,8 +40,19 @@ public class Bitacora {
     escribir.close();
 }
     public List<String> leer() throws IOException{
-        List<String> lineas=Files.readAllLines(Path.of("bitacora.txt"));
         
+        List<String> lineas=new ArrayList<>();
+        
+        BufferedReader br= new BufferedReader(new FileReader("bitacora.txt"));
+        
+        String linea;
+        
+        while((linea=br.readLine())!=null){
+            lineas.add(linea);
+        }
+        
+        br.close();
+    
         return lineas;
     }
     
