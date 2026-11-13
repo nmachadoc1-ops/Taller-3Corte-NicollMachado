@@ -1,0 +1,5 @@
+[2026-11-13 10:36:40] Se ha iniciado correctamente el sistema
+[2026-11-13 10:36:40] ERROR:Fallo de conexion
+[2026-11-13 10:36:40] Usuario conectado correctamente
+[2026-11-13 10:36:40] Usuario conectado correctamente
+[2026-11-13 10:36:40] ERROR: Archivo no encontrado
