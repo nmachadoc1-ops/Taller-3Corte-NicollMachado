@@ -41,4 +41,18 @@ public class Bitacora {
         
         return lineas;
     }
+    
+    public int contar(String palabra)throws IOException{
+        List<String > lineas =leer();
+        
+        int contador=0;
+        
+        for(String linea:lineas){
+            if(linea.toLowerCase().contains(palabra.toLowerCase())){
+                contador++;
+            }
+        }
+        return contador;
+    }
+    
 }
