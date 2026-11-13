@@ -16,7 +16,7 @@ import java.nio.charset.StandardCharsets;
 public class ReporteNotas {
     public static void main(String[] args) throws IOException {
         
-        
+         System.setOut(new java.io.PrintStream(System.out, true, StandardCharsets.UTF_8));
         try(FileReader fr=new FileReader("notas.csv", StandardCharsets.UTF_8);BufferedReader br=new BufferedReader(fr)){
             String linea=br.readLine();
             
